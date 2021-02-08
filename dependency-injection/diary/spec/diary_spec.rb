@@ -1,0 +1,3 @@
+describe Diary do
+  
+end
