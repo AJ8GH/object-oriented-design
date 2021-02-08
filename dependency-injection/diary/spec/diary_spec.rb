@@ -1,6 +1,7 @@
 describe Diary do
   let(:title) { 'Monday 8 Feb' }
   let(:body) { 'Learned how to apply dependency injection' }
+
   let(:entry_class) { class_double(Entry, 'Entry Class', new: entry) }
   let(:entry) { instance_double(Entry, 'Entry', title: title, body: body) }
 
