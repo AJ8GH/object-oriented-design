@@ -15,7 +15,7 @@ describe Board do
       end
 
       it 'updates square 6' do
-        board[20] = 'O'; subject.move(6, 'O')
+        board[] = 'O'; subject.move(6, 'O')
         expect { subject.show_board }.to output(board).to_stdout
       end
     end
