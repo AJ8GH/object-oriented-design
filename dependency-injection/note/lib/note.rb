@@ -10,17 +10,8 @@ class Note
   attr_reader :formatter
 
   def initialize(args)
-    args = defaults.merge(args)
     @title = args[:title]
     @body = args[:body]
-    @formatter = args[:formatter]
-  end
-
-  def defaults
-    {
-      title: 'title',
-      body: 'body',
-      formatter: 'formatter'
-    }
+    @formatter = args[:formatter] || Formatter.new
   end
 end
